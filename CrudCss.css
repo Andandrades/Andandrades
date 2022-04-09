@@ -40,12 +40,18 @@
 }
 
 
-#tabla{
+.tabla{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+ 
     
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 30px;
-    
+}
+
+@media screen {
+    .crud{ max-width: 100vh;
+    } 
 }
 table{
     width: 100%;
