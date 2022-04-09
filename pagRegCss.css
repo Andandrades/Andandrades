@@ -14,15 +14,10 @@
     padding: 23px 0px 0px 0px ;
 }
 
-#Registrarse{
-    display: flex;
-    justify-content: center;
-    margin-left: 119px;
-    margin-top: 30px;
-}
+
 
 #Register{
-    width: 30%;
+    width: 50%;
     background-color: #fcd993;
     padding: 40px;
     
