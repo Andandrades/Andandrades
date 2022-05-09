@@ -14,14 +14,8 @@
     align-items: center;
 }
 
-#barra{
-    width: 100%;
-    background-color: blue;
-    height: 100px;
-}
 #detalleProducto{
     width: 40%;
-    border-right: 2px black solid;
     padding-top: 20px;
     padding-bottom: 5px;
 }
@@ -31,7 +25,7 @@
 }
 #producto{
     width: 30%;
-    border-right: 2px black solid;
+    border-left: 2px black solid;
     padding-top: 30px;
 }
 #productoCarro{
@@ -50,7 +44,7 @@
     
 }
 #arribaCarro > div{
-    width: 30%;
+    width: 100%;
 }
 
 #botonComprarCarro{
@@ -75,12 +69,13 @@
 #header {
     background-color: rgb(255, 166, 0);
     color: white;
-    padding-top: 1%;
+    /* padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 5%; */
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
 }
 
 .menu{
@@ -119,9 +114,50 @@
     text-decoration: none;
 }
 
-@media only screen and(min-width:1080px){
-    .padding{
-        width: 100%;
-    }
+#botonEliminarCarrito > button{
+    border: 0px;
+    background-color: white;
+    padding-top: 8px;
+    padding-right: 10px;
 }
 
+#producto > button{
+    border: 1px black solid;
+    background-color: white;
+    width: 27px;
+}
+@media (max-width: 768px){
+    h5{
+        font-size: 16px !important;
+    }
+    #detalleProducto > img{
+        width: 20px !important;
+    }
+    #cuerpo{
+        width: 90%;
+    
+    }
+    #botonEliminarCarrito > button > img{
+        width: 15px;
+    }
+    #botonEliminarCarrito > button{
+        width: 20px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    #producto > button{
+        width: 20px;
+        font-size: 13px;
+    }
+    #detalleProducto{
+        font-size: 13px;
+    }
+    #producto{
+        font-size: 13px;
+    }
+    #botonComprarCarro > button{
+        width: 35%;
+        height: 40px;
+    }
+    
+}
