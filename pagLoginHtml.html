@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,17 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
+<style>
+    .error {
+        background-color: rgba(250, 0, 0, 0.151);
+        border: red solid;
+    }
+
+    .ok {
+        background-color: white;
+        border: rgb(255, 166, 0) solid;
+    }
+</style>
 <body
     style="background-image: url(https://c.wallhere.com/photos/ba/81/nature_dirtroad_plants_trees_leaves_grass_path_fall-1927963.jpg!d); height: 100%;">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -100,12 +111,12 @@
                 <form>
                     <div id="infoSesionCorreo">
                         <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" style="border: rgb(255, 166, 0) solid;">
 
                     </div>
                     <div id="infoSesionContraseña">
                         <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="Contra1">
+                        <input type="password" class="form-control" id="Contra1" style="border: rgb(255, 166, 0) solid;">
                     </div>
                 </form>
                 <div id="infoSesionContraseña" style="display: flex; justify-content: center; flex-direction: column;">
@@ -128,30 +139,34 @@
          
       });
     
-
- 
         function ValidarUsuario(correo, password) {
             if (/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(correo)) {
                 alert("La dirección de email " + correo + " es correcta. ");
-                if (password.length > 8){
+                if (password.length >= 8){
                     alert("la contraseña es valida")
                 }else{
-                    alert("la contraseña es invalida")
+                    alert("la contraseña es invalida");
+                    $("#Contra1").addClass("error");
+                    $("#Contra1").removeClass("ok");
+                    
                 }
                 
             } else {
                 alert("La dirección de email es incorrecta  " + correo);
+                $("#Email1").addClass("error");
+                $("#Email1").removeClass("ok");
             }
         };
+        
+        $("#Email1").blur(function(){
+            $("#Email1").addClass("ok");
+            $("#Email1").removeClass("remove");
+        });
 
-        function ValidarPassword(Pass){
-            if(pass.length > 8 ){
-                alert("La contrasela es valida")
-
-            }else{
-                alert("La contraseña debe tener mas de 8 caracteres. ")
-            }
-        };
+        $("#Contra1").blur(function(){
+            $("#Contra1").addClass("ok");
+            $("#Contra1").removeClass("remove");
+        });
     </script>
 </body>
 
