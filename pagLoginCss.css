@@ -28,4 +28,8 @@
     align-items: center;
     
 }
-
+@media(max-width: 768px){
+    #Login{
+        width: 90%;
+    }
+}
