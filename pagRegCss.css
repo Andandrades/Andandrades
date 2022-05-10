@@ -33,3 +33,9 @@
     
 }
 
+
+@media (max-width: 768px){
+    #Register{
+        width: 90%;
+    }
+}
