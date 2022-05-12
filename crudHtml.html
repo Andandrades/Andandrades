@@ -85,10 +85,11 @@
   <!--Fin Barra-->
     <div id="titulo">
         <h3>Lista de productos</h2>
-        <button type="button" class="btn btn-success">Añadir producto</button>
+        <a href="aña_prod.html"><button type="button" class="btn btn-success" >Añadir producto</button></a>
+        
     </div>
-    
-    <div class="tabla">
+    <!--INICIO  TABLA-->
+    <div class="tblStock" id="tabla">
         <div class="crud">
         <table>
             <thead>                
@@ -97,43 +98,47 @@
                     <th>Precio</th>
                     <th>Stock</th>
                     <th>Editar</th>
-                    <th>Eliminar</th>            
+                    <th>Eliminar</th>
             </thead>    
-            <tr>
-                <td>1</td>
-                <td>Planta 1</td>
-                <td>5000</td>
-                <td>30</td>
-                <td><button type="button" class="btn btn-primary">Editar</button></td>
-                <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Planta 2</td>
-                <td>8000</td>
-                <td>20</td>
-                <td><button type="button" class="btn btn-primary">Editar</button></td>
-                <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Planta 3</td>
-                <td>2000</td>
-                <td>50</td>
-                <td><button type="button" class="btn btn-primary">Editar</button></td>
-                <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Planta 4</td>
-                <td>10000</td>
-                <td>10</td>
-                <td><button type="button" class="btn btn-primary">Editar</button></td>
-                <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td data-label="ID">1</td>
+                    <td data-label="Producto">Planta 1</td>
+                    <td data-label="Precio">5000</td>
+                    <td data-label="Stock">30</td>
+                    <td data-label="Editar"><button type="button" class="btn btn-primary">Editar</button></td>
+                    <td data-label="Eliminar"><button type="button" class="btn btn-danger" >Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td data-label="ID">2</td>
+                    <td data-label="Producto">Planta 2</td>
+                    <td data-label="Precio">8000</td>
+                    <td data-label="Stock">20</td>
+                    <td data-label="Editar"><button type="button" class="btn btn-primary">Editar</button></td>
+                    <td data-label="Eliminar"><button type="button" class="btn btn-danger">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td data-label="ID">3</td>
+                    <td data-label="Producto">Planta 3</td>
+                    <td data-label="Precio">2000</td>
+                    <td data-label="Stock">50</td>
+                    <td data-label="Editar"><button type="button" class="btn btn-primary">Editar</button></td>
+                    <td data-label="Eliminar"><button type="button" class="btn btn-danger">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td data-label="ID">4</td>
+                    <td data-label="Producto">Planta 4</td>
+                    <td data-label="Precio">10000</td>
+                    <td data-label="Stock">10</td>
+                    <td data-label="Editar"><button type="button" class="btn btn-primary">Editar</button></td>
+                    <td data-label="Eliminar"><button type="button" class="btn btn-danger">Eliminar</button></td>
+                </tr>
+            </tbody>
                   
         </table>
     </div>
+
+    <!--FIN TABLA-->
 </div>
 </body>
 </html>
