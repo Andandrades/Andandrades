@@ -52,4 +52,18 @@ $(document).ready(function () {
         }
 
     });
+
+    $('#limpiar').click(function() {
+        $("#Email1").removeClass("ok");
+        $("#Email1").removeClass("error");
+        document.getElementById("correoError").textContent="";
+        $("#password1").removeClass("ok");
+        $("#password1").removeClass("error");
+        document.getElementById("passwordError").textContent="";
+        $("#password2").removeClass("ok");
+        $("#password2").removeClass("error");
+        document.getElementById("passwordError2").textContent="";
+
+    });
+
 });
