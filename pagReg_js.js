@@ -44,7 +44,7 @@ $(document).ready(function () {
         if ($("#Email1").val() == ""  ||$("#password1").val().length < 8){
             event.preventDefault();
             alert('Complete todos los campos vacios.')
-        }if($(contra1 != contra2)){
+        }if(contra1 != contra2){
             event.preventDefault();
             alert('Las contraseñas deben ser iguales')
         }else{
