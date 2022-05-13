@@ -21,12 +21,13 @@
 #detalleCompra > a{
     text-decoration: none;
 }
-#VolverInicioCompras > button{
+#VolverInicioCompras > a{
     background-color: rgb(255, 166, 0);
     margin-left: 30px;
     margin-top: 20px;
     height: 35px;
     width: 80px;
+    border: 1px black solid;
 }
 #header {
     background-color: rgb(255, 166, 0);
