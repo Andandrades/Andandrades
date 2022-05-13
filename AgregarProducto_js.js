@@ -24,4 +24,22 @@ $(document).ready(function () {
         }
     });
 
+    $('#enviar').click(function() {
+        if ($("#nombreP").val() == ""||$("#precio").val() == ""){
+            event.preventDefault();
+            alert('Complete todos los campos vacios!')
+        }else{
+            $("#mensaje5").html("✓ ")
+        }
+    });
+
+    $('#limpiar').click(function() {
+        $("#nombreP").removeClass("ok");
+        $("#nombreP").removeClass("error");
+        $("#precio").removeClass("ok");
+        $("#precio").removeClass("error");
+        document.getElementById("precioError").textContent="";
+        document.getElementById("nombrePError").textContent="";
+    });
+
 });
